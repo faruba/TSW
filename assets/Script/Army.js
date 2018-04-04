@@ -16,13 +16,17 @@ cc.Class({
             default: 20,
             type: cc.Integer
         },
-        defence:{
+		hpMax:{
+			default:20,
+            type: cc.Integer
+		},
+        def:{
             default: 0,
             type:cc.Integer
         },
-        attack:{
+        atk:{
             default:1,
-            type:cc.Integer
+            type:cc.Integer,
         },
         display:{
             default:null,
@@ -54,4 +58,33 @@ cc.Class({
     },
 
     // update (dt) {},
+	attack(target) {
+		const army = target.getComponent(Arym)
+		if(army == null) {
+			return;
+		}
+		army.underAttack(this.atk);
+	},
+	heal(target) {
+		if(target.group != this.
+	},
+	underAttack(damage) {
+		const dmg = Math.abs(damage) - this.def
+		if(dmg <= 0) return;
+		this.hp -= dmg;
+		if(hp <= 0) {
+			this.onDead()
+		}
+	},
+	onBeHealed(value) {
+		this.hp += Math.abs(value)
+		if(this.hp > this.hpMax) {
+			this.hp = this.hpMax;
+		}
+	},
+	onDead(){
+	},
+	onHpChange() {
+	},
+
 });
