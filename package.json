@@ -1,0 +1,15 @@
+{
+  "name": "PixelBattle",
+  "version": "0.0.1",
+  "language": "zh",
+  "description": "game",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:faruba/TSW.git"
+  },
+  "author": "faruba",
+  "dependencies": {
+    "cheerio": "0.20.0",
+    "domhandler": "2.3.0"
+  }
+}

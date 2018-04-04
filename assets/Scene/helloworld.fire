@@ -66,9 +66,6 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 10
-      },
-      {
         "__id__": 11
       }
     ],
@@ -233,6 +230,9 @@
     "_components": [
       {
         "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -364,7 +364,7 @@
       "r": 255,
       "g": 255,
       "b": 255,
-      "a": 0
+      "a": 255
     },
     "_endColorVar": {
       "__type__": "cc.Color",
@@ -394,11 +394,11 @@
       "y": 0
     },
     "_positionType": 0,
-    "_emitterMode": 0,
+    "_emitterMode": 1,
     "_gravity": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.25,
+      "y": 0.8600000143051147
     },
     "_speed": 180,
     "_speedVar": 50,
@@ -431,6 +431,19 @@
     }
   },
   {
+    "__type__": "0e2107Ml+RHdKtpK065nZCw",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 6
+    },
+    "_enabled": true,
+    "canvas": {
+      "__id__": 2
+    },
+    "speed": 20
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -445,16 +458,5 @@
     },
     "_fitWidth": false,
     "_fitHeight": true
-  },
-  {
-    "__type__": "280c3rsZJJKnZ9RqbALVwtK",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "label": null,
-    "text": "Hello, World!"
   }
 ]
